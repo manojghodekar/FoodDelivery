@@ -1,0 +1,25 @@
+{
+  "name": "fooddelivery",
+  "version": "1.0.0",
+  "description": "Food Delivey App",
+  "homepage": "https://github.com/manojghodekar/FoodDelivery#readme",
+  "bugs": {
+    "url": "https://github.com/manojghodekar/FoodDelivery/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manojghodekar/FoodDelivery.git"
+  },
+  "license": "ISC",
+  "author": "Manoj Ghodekar",
+  "type": "commonjs",
+  "scripts": {
+    "start": "npx parcel index.html",
+    "test": "jest"
+  },
+  "dependencies": {
+    "parcel": "^2.16.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}
