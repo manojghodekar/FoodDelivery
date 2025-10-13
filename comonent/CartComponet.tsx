@@ -1,16 +1,16 @@
 import React from 'react'
+import { CDN_URL } from '../utility/constant';
 const backgroundColor = {
     backgroundColor: 'grey'
 }
-export const Cart = ({data}) => {
-    const { resName, image, dish, rating, time} = data
+export const Cart = ({restData}) => {
+    const { cloudinaryImageId, name,cuisines, avgRatingString} = restData.data ;
     return (
-        <div className="cart" style={backgroundColor}>
-            <h3>{resName}</h3>
-            <img src ={image}></img>
-            <h3>{dish.join(" ,")}</h3>
-            <h4>{rating}</h4>
-            <h4> {time}</h4>
+        <div className="cart" >
+            <img className="res-logo" src ={CDN_URL+ cloudinaryImageId}/>
+            <h3>{name}</h3>
+            {<h3>{cuisines.join(" ,")}</h3> }
+            <h4>{avgRatingString}</h4>
         </div>
     )
 }

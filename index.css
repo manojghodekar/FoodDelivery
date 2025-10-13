@@ -17,13 +17,15 @@
     padding: 10px;
     margin: 10px;
 }
-.body {
- 
+
+.res-logo{
+    width:200px;
+    height: 100px;
 }
 .cart{
-    width: 250px;
-    height: 350px;
-    margin: 2px;
+    width: 200px;
+    height: 300px;
+    margin: 20px;
 }
 .cart:hover {
     cursor: pointer;
@@ -36,4 +38,8 @@
     display: flex;
     flex-wrap: wrap;
     margin: 10px ;
+}
+.filter-button{
+    margin: 5px;
+    cursor: pointer;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import { AppLayOutComponent } from './comonent/AppLayOut';
+import AppLayOutComponent  from './comonent/AppLayOut';
 const container = document.getElementById("root");
 
 
