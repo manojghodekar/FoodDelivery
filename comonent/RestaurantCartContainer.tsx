@@ -3,6 +3,7 @@ import { Cart } from './CartComponet'
 import { RestaurantList } from '../utility/mockdata';
 import { SWIGGY_API } from '../utility/constant';
 import {useState, useEffect} from 'react';
+import { Shimmer } from './Shimmer';
 
 
 
@@ -13,14 +14,20 @@ export const RestaurantCartContainer = (props) =>{
     async function fetchData(){
     const data = await fetch(SWIGGY_API)
     const json = await data.json();
-    setRestList(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+  setRestList(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
    };
    fetchData()}, [])
+
+
+if(restList.length === 0){
+    return <Shimmer></Shimmer>
+}
    
 const  filteRestaurant =()=> { 
     let filterList = restList.filter((rest)=> rest.info.avgRatingString > 4.5);
     setRestList(filterList);
 };
+
     
     return (
         <>
