@@ -18,10 +18,6 @@ export const RestaurantCartContainer = (props) =>{
    };
    fetchData()}, [])
 
-
-if(restList.length === 0){
-    return <Shimmer></Shimmer>
-}
    
 const  filteRestaurant =()=> { 
     let filterList = restList.filter((rest)=> rest.info.avgRatingString > 4.5);
@@ -29,7 +25,7 @@ const  filteRestaurant =()=> {
 };
 
     
-    return (
+    return restList.length === 0 ? <Shimmer/> :  (
         <>
         <div className="search">
         <button className="filter-button" onClick={filteRestaurant}>Top Rated Resturant</button>
