@@ -1,6 +1,6 @@
 export const RestaurantList = [
     {
-    data: {
+    info: {
     id: "255655",
     name: "Cake & Cream",
     cloudinaryImageId: "FOOD_CATALOG/IMAGES/CMS/2024/4/14/2a8317be-9d3d-47fd-8c07-04fea898da31_0ebf25ce-452e-4eb1-9f87-f2f01e70512f.jpg",
@@ -15,7 +15,7 @@ export const RestaurantList = [
     },
     },
     {
-    data: {
+    info: {
     id: "350363",
     name: "Haldiram's Sweets and Namkeen",
     cloudinaryImageId: "25c3a7d394d6c5556b134385f7d665b0",
@@ -34,7 +34,7 @@ export const RestaurantList = [
     },
     },
     {
-    data: {
+    info: {
     id: "154891",
     name: "Rasraj Restaurant",
     cloudinaryImageId: "egbr63ulc8h1zgliivd8",
@@ -53,7 +53,7 @@ export const RestaurantList = [
     },
     },
     {
-    data: {
+    info: {
     id: "745961",
     name: "Balaji Restaurant",
     cloudinaryImageId: "b8672fe52944c3599ea324d99d608300",
@@ -66,7 +66,7 @@ export const RestaurantList = [
     },
     },
     {
-    data: {
+    info: {
     id: "798745",
     name: "Friends Restaurant",
     cloudinaryImageId: "b14cd9fc40129fcfb97aa7e621719d07",
@@ -79,7 +79,7 @@ export const RestaurantList = [
     },
     },
     {
-    data: {
+    info: {
     id: "314737",
     name: "RASOI the KITCHEN",
     cloudinaryImageId: "yjymo9nhyn7rhvafsrd3",
@@ -93,7 +93,7 @@ export const RestaurantList = [
     },
     },
     {
-    data: {
+    info: {
     id: "201454",
     name: "Morsels restaurants",
     cloudinaryImageId: "aafe71251ef5328784652dc838cd91f3",
@@ -108,7 +108,7 @@ export const RestaurantList = [
     },
     },
     {
-    data: {
+    info: {
     id: "266124",
     name: "Trimurti Restaurant",
     cloudinaryImageId: "8135c0066b06e2925c66930be4e9ffb5",
@@ -123,7 +123,7 @@ export const RestaurantList = [
     },
     },
     {
-    data: {
+    info: {
     id: "509254",
     name: "Saha Restaurant",
     cloudinaryImageId: "z1ez4uc9idul2uj2v87g",

@@ -4,7 +4,7 @@ const backgroundColor = {
     backgroundColor: 'grey'
 }
 export const Cart = ({restData}) => {
-    const { cloudinaryImageId, name,cuisines, avgRatingString} = restData.data ;
+    const { cloudinaryImageId, name,cuisines, avgRatingString} = restData.info;
     return (
         <div className="cart" >
             <img className="res-logo" src ={CDN_URL+ cloudinaryImageId}/>
