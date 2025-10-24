@@ -8,8 +8,6 @@ import {useState} from 'react';
 export const RestaurantCartContainer = (props) =>{
    const [restList, setRestList]=useState(RestaurantList);
    
-
-
 const  filteRestaurant =()=> { 
     let filterList = restList.filter((rest)=> rest.data.avgRatingString > 4);
     setRestList(filterList);
