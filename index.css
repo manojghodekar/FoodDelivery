@@ -33,6 +33,7 @@
 }
 .search{
     padding: 10px ;
+    display: flex;
 }
 .rest-container{
     display: flex;
@@ -54,4 +55,9 @@
 .shimmer-container {
     display: flex;
     flex-wrap: wrap;
+}
+
+.login{
+    padding: 2 20px;
+    cursor: pointer;
 }
