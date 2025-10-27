@@ -4,6 +4,7 @@ import { RestaurantList } from '../utility/mockdata';
 import { SWIGGY_API } from '../utility/constant';
 import {useState, useEffect} from 'react';
 import { Shimmer } from './Shimmer';
+import { Link } from 'react-router';
 
 
 
@@ -49,7 +50,7 @@ const search =()=>{
         onClick={filteRestaurantList}>Top Rated Resturant</button>
         </div>
         <div className="rest-container">
-            { filterRestaurant.map((rest)=> <Cart  key={rest.info.id} restData={rest}></Cart>)}
+            { filterRestaurant.map((rest)=> <Link key={rest.info.id} to={"/restaurant/"+rest.info.id}><Cart   restData={rest}></Cart></Link>)}
         </div>
         </>)
     }
